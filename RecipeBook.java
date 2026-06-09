@@ -71,10 +71,14 @@ public class RecipeBook {
                 return;
             }
 
-            if (type.equalsIgnoreCase("APPETIZER")) {addRecipe(new AppetizerRecipe(name, prep, cook, serves));
-            } else if (type.equalsIgnoreCase("MAIN")) {addRecipe(new MainCourseRecipe(name, prep, cook, serves));
-            } else if (type.equalsIgnoreCase("DESSERT")) {addRecipe(new DessertRecipe(name, prep, cook, serves));
-            } else {System.out.println("Unknown recipe type. Skipping...");
+            if (type.equalsIgnoreCase(Recipe.TYPE_APPETIZER)) {
+                addRecipe(new AppetizerRecipe(name, prep, cook, serves));
+            } else if (type.equalsIgnoreCase(Recipe.TYPE_MAIN)) {
+                addRecipe(new MainCourseRecipe(name, prep, cook, serves));
+            } else if (type.equalsIgnoreCase(Recipe.TYPE_DESSERT)) {
+                addRecipe(new DessertRecipe(name, prep, cook, serves));
+            } else {
+                System.out.println("Unknown recipe type. Skipping...");
             }
 
         } catch (NumberFormatException e) {System.out.println("Skipping invalid entry: PREP, COOK, or SERVES is not a valid integer.");}
