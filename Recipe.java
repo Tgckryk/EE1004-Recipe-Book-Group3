@@ -1,4 +1,7 @@
 public abstract class Recipe {
+    public static final String TYPE_APPETIZER = "APPETIZER";
+    public static final String TYPE_MAIN = "MAIN";
+    public static final String TYPE_DESSERT = "DESSERT";
     protected String name;
     protected int prepMinutes;
     protected int cookMinutes;
