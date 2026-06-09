@@ -9,7 +9,17 @@ This is a Java-based Object-Oriented Programming project that loads recipes from
 ## How to Compile and Run
 Navigate to the project folder via terminal/command prompt and run the following commands.
 
-**To run the standard Terminal Version (As requested in the assignment):**
+**To compile all files:**
 ```bash
 javac *.java
+```
+
+To run the standard Terminal Version:
+```bash
 java Main
+```
+
+To run the Graphical User Interface (GUI) Version:
+```bash
+java GuiMain
+```
